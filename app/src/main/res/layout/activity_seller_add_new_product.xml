@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_texture_background"
+    tools:context=".Sellers.SellerAddNewProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rel_in_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/select_product_image"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_centerHorizontal="true"
+                android:cropToPadding="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:background="@color/colorGrey"/>
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/select_product_image"
+                android:background="@drawable/inputs"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:padding="20sp"
+                android:hint="Product name..."
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/product_description"/>
+
+            <EditText
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name"
+                android:background="@drawable/inputs"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textMultiLine"
+                android:padding="20sp"
+                android:hint="Product description..."
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/product_price"/>
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_description"
+                android:background="@drawable/inputs"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="6dp"
+                android:inputType="textMultiLine"
+                android:padding="20sp"
+                android:hint="Product price..."
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/product_add_btn"/>
+
+            <Button
+                android:id="@+id/product_add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_price"
+                android:background="@drawable/button_grey"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="20dp"
+                android:padding="20sp"
+                android:text="Add product"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout></ScrollView>
+
+</RelativeLayout>

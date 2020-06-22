@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "185936138846",
+    "firebase_url": "https://tusmarket-5224a.firebaseio.com",
+    "project_id": "tusmarket-5224a",
+    "storage_bucket": "tusmarket-5224a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185936138846:android:ffec624fa606d375",
+        "android_client_info": {
+          "package_name": "com.marketapp.rob.markettus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185936138846-lc8fkt7s2t2t4gvgku7tj7tb5c2joska.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marketapp.rob.markettus",
+            "certificate_hash": "289b0c8a147108d951dffc3500dd9d9ad123a897"
+          }
+        },
+        {
+          "client_id": "185936138846-4ii7iel6n6vprlo0t505cierfhsln19e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbISjI2LN9EFh1VAqTtCaVQSm5m07oPIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185936138846-4ii7iel6n6vprlo0t505cierfhsln19e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

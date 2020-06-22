@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rel_in_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/seller_login_logo_main"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/shop_market_logo"/>
+
+            <EditText
+                android:id="@+id/register_username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs"
+                android:layout_below="@id/seller_login_logo_main"
+                android:hint="Username"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/register_phone_number_input"/>
+
+            <EditText
+                android:id="@+id/register_phone_number_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_username_input"
+                android:background="@drawable/inputs"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/register_password_input"/>
+
+            <EditText
+                android:id="@+id/register_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_phone_number_input"
+                android:background="@drawable/inputs"
+                android:hint="Password"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/create_an_account_btn"/>
+
+
+            <Button
+                android:id="@+id/create_an_account_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/register_password_input"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_grey"
+                android:padding="17dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:text="Create an Account"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

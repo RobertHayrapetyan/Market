@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.SellerAddNewProductActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="27dp"
+        android:text="Add New Product"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/lin_layout_category_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/slogan_category"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/category_wine"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/category_wine_logo"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/category_beer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/category_beer_logo"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/category_alcohol"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/category_alcohol_logo"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

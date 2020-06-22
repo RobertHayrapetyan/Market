@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <RelativeLayout
+        android:id="@+id/rel_in_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/seller_login_logo_main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/shop_market_logo"/>
+
+    <EditText
+        android:id="@+id/login_phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seller_login_logo_main"
+        android:background="@drawable/inputs"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:padding="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorGrey"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/login_password_input"/>
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_phone_number_input"
+        android:background="@drawable/inputs"
+        android:hint="Password"
+        android:padding="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorGrey"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:nextFocusDown="@+id/login_btn" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_input"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remamber Me"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="17dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Forgot password?"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_green"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Login"
+        android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rel_in_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/seller_reg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller registration form"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/seller_login_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/seller_login_logo"
+                android:layout_below="@id/seller_reg_title"/>
+
+            <EditText
+                android:id="@+id/seller_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs"
+                android:layout_below="@id/seller_login_logo"
+                android:hint="Username"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/register_phone_number_input"/>
+
+
+            <EditText
+                android:id="@+id/seller_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seller_name"
+                android:background="@drawable/inputs"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/register_password_input"/>
+
+            <EditText
+                android:id="@+id/seller_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seller_phone_number"
+                android:background="@drawable/inputs"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/register_password_input"/>
+
+            <EditText
+                android:id="@+id/seller_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seller_email"
+                android:background="@drawable/inputs"
+                android:hint="Password"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/create_an_account_btn"/>
+
+            <EditText
+                android:id="@+id/seller_shop_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seller_password"
+                android:background="@drawable/inputs"
+                android:hint="Shop address"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:nextFocusDown="@+id/create_an_account_btn"/>
+
+
+            <Button
+                android:id="@+id/seller_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+android:layout_below="@+id/seller_shop_address"                android:background="@drawable/button_grey"
+                android:padding="17dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:text="Register"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

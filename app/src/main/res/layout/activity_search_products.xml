@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SearchProductsActivity">
+
+    <LinearLayout
+        android:id="@+id/rel5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:padding="9dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/search_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product name"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:padding="9dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Search"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorGrey"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel5"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
